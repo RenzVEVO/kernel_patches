@@ -11,5 +11,5 @@ index c1e803d7..1e8f98e6 100644
 -	return check_v2_signature(path, expected_manager_size, expected_manager_hash);
 +	return check_v2_signature(path, expected_manager_size, expected_manager_hash)
 +		|| check_v2_signature(path, 0x39b, "593d4ce870c02468639efeef631e07ca4d852d63f154be56706229f9a5be0800"); // TheWildJames Fork Manager
-+  		|| check_v2_signature(path, 0x3e6, "79e590113c4c4c0c222978e413a5faa801666957b1212a328e46c00c69821bf7"); // KernelSU-Next manager
+-  		|| check_v2_signature(path, 0x3e6, "79e590113c4c4c0c222978e413a5faa801666957b1212a328e46c00c69821bf7"); // KernelSU-Next manager
  }
